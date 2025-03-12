@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/snackit.png">
+        <title>Checkout - Snack Store</title>
+        <link rel="stylesheet" href="css/checkout.css">
+        <script type="module" src="js/checkout.js"></script>
+    </head>
+    <body>
+ 
+ 
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+ 
+        <header>
+            <h1>Checkout 🛍️</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="cart.html">Cart</a>
+            </nav>
+        </header>
+ 
+        <main class="checkout-container">
+            <h2>Order Summary</h2>
+            <div id="user-section"></div>
+            <div id="user-section">
+                <p><strong>Email:</strong> <span id="customer-email"></span></p>
+                <p><strong>Date:</strong> <span id="order-date"></span></p>
+            </div>
+            
+            <h3>Items:</h3>
+            <ul id="order-items"></ul>
+ 
+            <p><strong>Total Amount:</strong> ₹<span id="total-amount">0</span></p>
+ 
+            <div id="credit-section">
+                <p><strong>Your Credits:</strong> <span id="user-credits">0</span></p>
+                <label>
+                    <input type="checkbox" id="use-credits"> Use Credits
+                </label>
+                <p><strong>Final Amount:</strong> ₹<span id="final-amount">0</span></p>
+            </div>
+ 
+            <label for="payment-method">Payment Type:</label>
+            <select id="payment-method">
+                <option value="cash">Cash on Delivery</option>
+                <option value="card">Card</option>
+                <option value="upi">UPI</option>
+            </select>
+ 
+            <button id="checkout-btn">Confirm Order</button>
+        </main>
+ 
+       
+        <script>
+            window.addEventListener("load", function () {
+                document.getElementById("preloader").style.display = "none";
+            });
+        </script>
+        <script type="module" src="js/checkout.js" defer></script>
+
+       
+    </body>
+    </html>

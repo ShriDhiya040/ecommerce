@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - LUNA Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/cart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.jpg" alt="LUNA Store Logo">
+                    <span></span>
+                </a>
+            </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop</a>
+            <div id="user-section">
+                <a href="login.html" id="login-link">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cart-container">
+        <h2>Your Cart </h2>
+        <div id="cart-items"></div>
+        <div id="user-section"> </div>
+
+        <div class="cart-summary">
+            <h3>Subtotal: <span id="subtotal">₹0.00</span></h3>
+            <button id="checkout">Proceed to Checkout</button>
+
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Luna | All rights reserved</p>
+    </footer>
+    <script src="js/auth.js" type="module" defer></script>
+
+</body>
+</html>

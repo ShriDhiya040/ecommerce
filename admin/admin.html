@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <!-- ✅ Responsive Admin Navigation Bar -->
+    <nav class="navbar">
+        <div class="menu-toggle">&#9776;</div>
+        <div class="nav-links">
+            <a href="admin.html">Edit Products</a>
+            <a href="reports.html">Report Generation</a>
+            <button id="logout-btn">Logout</button> <!-- ✅ Logout button -->
+        </div>
+    </nav>
+
+    <div id="admin-panel" style="display:none;">
+        <h2>Admin Panel - Manage Products</h2>
+
+        <form id="add-product-form">
+            <input type="text" id="category" placeholder="Category" required>
+            <input type="number" id="credit" placeholder="Credit" required>
+            <input type="text" id="img-url" placeholder="Image URL" required>
+            <input type="text" id="name" placeholder="Product Name" required>
+            <input type="number" id="price" placeholder="Price" required> 
+            <input type="number" id="stock" placeholder="Stock Quantity" required>
+            <select id="stock-status">
+                <option value="visible">Visible</option>
+                <option value="hidden">Hidden</option>
+            </select>
+            <button type="submit">Add Product</button>
+        </form>
+
+        <div id="products-container"></div>
+        <button id="next-btn">Next</button>
+    </div>
+
+    <!-- ✅ Responsive Banner -->
+    <div class="banner-container">
+        <img src="../images/background.jpg" alt="LUNA products" class="banner-image">
+
+
+    </div>
+
+
+
+    <script src="../js/admin.js" type="module" defer></script>
+</body>
+</html>
+
+
+
